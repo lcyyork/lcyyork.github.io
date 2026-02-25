@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Professor of Chemistry # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Professor of Chemistry, also known as York # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: left
@@ -36,4 +36,9 @@ During this period, we developed a series of multireference electronic structure
 
 In 2021, I joined the College of Chemistry at Beijing Normal University as an associate professor and was promoted to full professor in 2022.
 
-My research focuses on the development of robust and efficient electronic structure methods for strongly correlated systems and their applications to challenging problems in chemistry.
+## Openings
+We are continuously seeking talented postdoctoral researchers and highly motivated graduate or undergraduate students with a strong interest in theoretical and computational chemistry to join our group.
+Our research focuses on the development, implementation, and application of advanced electronic structure methods, with an emphasis on methodological innovation and high-performance scientific computing.
+
+Prospective applicants who are enthusiastic about electronic structure theory, many-body methods, and computational chemistry are encouraged to contact me by email with a CV and a brief cover letter describing their research interests, relevant experience, and long-term goals.
+Postdoctoral applicants should also provide the contact information of two referees who can provide recommendation letters upon request.
