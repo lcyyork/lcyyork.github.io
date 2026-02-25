@@ -1,3 +1,42 @@
+"JCTC":
+  url: https://pubs.acs.org/journal/jctcce
+  color: "#177746"
+
+"JCP":
+  url: https://pubs.aip.org/aip/jcp
+  color: "#2c3362"
+
+"Molecules":
+  url: https://www.mdpi.com/journal/molecules
+  color: "#017c7e"
+
+"OL":
+  url: https://pubs.acs.org/journal/orlef7
+  color: "#d61f31"
+
+"nc":
+  url: https://www.nature.com/ncomms
+  color: "#e63324"
+
+"PRX Quantum":
+  url: https://journals.aps.org/prxquantum/
+
+"ACS AMI":
+  url: https://pubs.acs.org/journal/aamick
+  color: "#2b8a42"
+
+"ARPC":
+  url: https://www.annualreviews.org/content/journals/physchem
+  color: "#305e83"
+
+"CM":
+  url: https://pubs.acs.org/journal/cmatex
+  color: "#dec469"
+
+"JPCB":
+  url: https://pubs.acs.org/journal/jpcbfk
+  color: "#007cc2"
+
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"
