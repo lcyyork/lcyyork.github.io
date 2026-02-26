@@ -6,6 +6,10 @@
   url: https://pubs.aip.org/aip/jcp
   color: "#2c3362"
 
+"IC":
+  url: https://pubs.acs.org/journal/inocaj
+  color: "#005e9d"
+
 "Molecules":
   url: https://www.mdpi.com/journal/molecules
   color: "#017c7e"
@@ -35,7 +39,7 @@
 
 "JPCB":
   url: https://pubs.acs.org/journal/jpcbfk
-  color: "#007cc2"
+  color: "#31aae1"
 
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
