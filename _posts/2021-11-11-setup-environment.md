@@ -4,7 +4,7 @@ title: setting up your development environment
 date: 2021-11-11 10:00:00+0800
 description: setting up a Linux or macOS system for quantum chemistry research
 tags: [ basics, linux, software ]
-categories: easy
+categories: students
 ---
 
 As a quantum chemist, your daily workflow will include deriving equations, translating them into code, debugging, running large-scale computations, analyzing data, visualizing results, and writing papers.

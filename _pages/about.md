@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Professor of Chemistry, also known as York # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Professor of Chemistry at Beijing Normal University, also known as York # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: left

@@ -4,7 +4,7 @@ title: writing scientific papers
 date: 2021-11-13 10:10:10+0800
 description: basic skills for writing scientific papers
 tags: [ basics, writing ]
-categories: easy
+categories: students
 ---
 
 Writing is an essential part of research.
