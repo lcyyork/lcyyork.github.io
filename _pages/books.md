@@ -19,3 +19,6 @@ collection: books
 > -- Steve Jobs, 2005 Stanford Commencement Address
 
 ## Books and articles that I found useful or interesting
+
+---
+
