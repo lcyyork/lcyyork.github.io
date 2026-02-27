@@ -23,12 +23,19 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/people/";
               },
+            },{id: "dropdown-alumni",
+              title: "alumni",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/alumni/";
+              },
             },{id: "dropdown-gallery",
               title: "gallery",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/people/";
+                window.location.href = "/gallery/";
               },
             },{id: "nav-publications",
           title: "publications",
