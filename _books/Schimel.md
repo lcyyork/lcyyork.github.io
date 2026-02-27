@@ -4,7 +4,7 @@ title: Writing Science
 author: Joshua Schimel
 cover: assets/img/book_covers/Schimel.jpg
 isbn: 0199760241
-categories: [ scientific writing ]
+categories: [scientific writing]
 tags: introductory
 difficulty: introductory
 buy_link: https://www.amazon.com/Writing-Science-Papers-Proposals-Funded/dp/0199760241

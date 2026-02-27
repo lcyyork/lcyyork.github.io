@@ -3,7 +3,7 @@ layout: post
 title: writing scientific papers
 date: 2021-11-13 10:10:10+0800
 description: basic skills for writing scientific papers
-tags: [ basics, writing ]
+tags: [basics, writing]
 categories: students
 ---
 
@@ -19,12 +19,14 @@ Below are resources and practical advice to help you develop strong scientific w
 ## General Advice on Writing
 
 #### Notes by Professor David Sherrill
+
 https://vergil.chemistry.gatech.edu/resources#Scientific-Writing
 
 This note is concise, practical, and written specifically for computational chemists.
 Do not just read them once — revisit them while drafting your own manuscript.
 
 #### Whitesides’ Group: “Writing a Paper”
+
 DOI: 10.1002/adma.200400767
 
 This classic article provides high-level guidance on structuring a scientific paper:
@@ -39,6 +41,7 @@ If you internalize the principles in this article, your writing will improve dra
 ---
 
 ## Learning LaTeX - Overleaf LaTeX Tutorials
+
 https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
 
 A practical way to learn LaTeX is to start from real journal templates (ACS, AIP, PCCP, etc.) on Overleaf and modify them.
@@ -58,6 +61,7 @@ It is the standard tool for professional scientific writing.
 ---
 
 ## Creating Better Figures - “Ten Simple Rules for Better Figures”
+
 DOI: 10.1371/journal.pcbi.1003833
 
 This article discusses principles such as:

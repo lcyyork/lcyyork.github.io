@@ -3,7 +3,7 @@ layout: post
 title: cluster witout internet connection
 date: 2024-07-22 10:00:00+0800
 description: "setting up cluster 18: SSH tunneling, CentOS 7 vault fix, and environment modules installation"
-tags: [ linux, cluster maintenance ]
+tags: [linux, cluster maintenance]
 categories: linux
 ---
 
@@ -11,6 +11,7 @@ categories: linux
 > These instructions are intended for maintaining legacy systems.
 
 This document records procedures for:
+
 - Accessing the internet from an offline server via SSH tunnel
 - Fixing the CentOS 7 repository issue
 - Installing Environment Modules from source
@@ -24,17 +25,20 @@ we can tunnel traffic through SSH using dynamic port forwarding.
 Although we use CentOS 7 here, the approach in this section also works for Rocky Linux 8.
 
 References:
+
 - https://unix.stackexchange.com/questions/157743/tunnel-yum-traffic-through-another-server-via-ssh
 - https://unix.stackexchange.com/questions/111972/connect-to-the-internet-on-a-vpn-connected-server-without-internet
 
 ### 1.1 Configure YUM to Use Proxy
 
 Edit:
+
 ```
 /etc/yum.conf
 ```
 
 Add:
+
 ```
 proxy=socks5h://localhost:1080
 ```
@@ -82,6 +86,7 @@ Edit `~/.gitconfig`:
 Since CentOS 7 is EOL, the default mirrorlist no longer resolves.
 
 Reference:
+
 - https://serverfault.com/questions/1161816/mirrorlist-centos-org-no-longer-resolve
 
 ### 2.1 Switch to Vault Repository
@@ -108,6 +113,7 @@ Environment Modules allow dynamic modification of shell environments,
 which is useful for managing compilers, MPI, and scientific software.
 
 Documentation:
+
 - https://modules.readthedocs.io/en/stable/INSTALL.html
 
 ### 3.1 Download Source (with SSH tunnel)
@@ -141,6 +147,7 @@ ln -s /usr/share/Modules/init/profile.csh /etc/profile.d/modules.csh
 ```
 
 Log out and back in, or run:
+
 ```
 source /etc/profile.d/modules.sh
 ```
@@ -161,6 +168,7 @@ module load foo/1.2
 These procedures are primarily for maintaining legacy CentOS 7 cluster nodes.
 
 For new deployments, consider:
+
 - Rocky Linux or AlmaLinux
 - A modern workload manager (e.g., SLURM)
 - Lmod instead of classic Environment Modules

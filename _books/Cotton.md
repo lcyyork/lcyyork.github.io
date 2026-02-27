@@ -4,7 +4,7 @@ title: Chemical Applications of Group Theory
 author: F. Albert Cotton
 cover: assets/img/book_covers/Cotton.jpg
 isbn: 0471510947
-categories: [ group theory ]
+categories: [group theory]
 tags: introductory
 difficulty: introductory
 buy_link: ihttps://www.amazon.com/Chemical-Applications-Group-Theory-3rd/dp/0471510947

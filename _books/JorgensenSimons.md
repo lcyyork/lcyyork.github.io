@@ -4,7 +4,7 @@ title: Second Quantization-Based Methods in Quantum Chemistry
 author: Poul Jørgensen and Jack Simons
 cover: assets/img/book_covers/JorgensenSimons.jpg
 isbn: 0124121969
-categories: [ quantum chemistry ]
+categories: [quantum chemistry]
 tags: intermediate
 difficulty: intermediate
 buy_link: https://www.amazon.com/Second-Quantization-Based-Methods-Quantum-Chemistry/dp/0124121969

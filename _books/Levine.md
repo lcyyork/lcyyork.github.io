@@ -4,7 +4,7 @@ title: Quantum Chemistry
 author: Ira N. Levine
 cover: assets/img/book_covers/Levine.jpg
 isbn: 0321803450
-categories: [ quantum mechanics, quantum chemistry ]
+categories: [quantum mechanics, quantum chemistry]
 tags: introductory
 difficulty: introductory
 buy_link: https://www.amazon.com/Quantum-Chemistry-7th-Ira-Levine/dp/0321803450

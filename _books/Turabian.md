@@ -4,7 +4,7 @@ title: A Manual for Writers of Research Papers, Theses, and Dissertations
 author: Kate L. Turabian
 cover: assets/img/book_covers/Turabian.jpg
 isbn: 022643057X
-categories: [ scientific writing ]
+categories: [scientific writing]
 tags: introductory
 difficulty: introductory
 buy_link: https://www.amazon.com/Manual-Writers-Research-Papers-Dissertations/dp/022643057X
@@ -29,6 +29,7 @@ A Manual for Writers also covers an issue familiar to writers of all levels: how
 
 Through eight decades and millions of copies, A Manual for Writers has helped generations shape their ideas into compelling research papers.
 This new edition will continue to be the gold standard for college and graduate students in virtually all academic disciplines.
+
 - Bestselling, trusted, and time-tested advice for writing research papers
 - The best interpretation of Chicago style for higher education students and researchers
 - Definitive, clear, and easy to read, with plenty of examples

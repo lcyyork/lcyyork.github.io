@@ -4,7 +4,7 @@ title: Fundamentals of Matrix Computations
 author: David S. Watkins
 cover: assets/img/book_covers/Watkins.jpg
 isbn: 0470528338
-categories: [ linear algebra ]
+categories: [linear algebra]
 tags: intermediate
 difficulty: intermediate
 buy_link: https://www.amazon.com/Fundamentals-Matrix-Computations-David-Watkins/dp/0470528338
@@ -17,6 +17,7 @@ Retaining the accessible and hands-on style of its predecessor, Fundamentals of 
 The book presents the most important algorithms of numerical linear algebra and helps readers to understand how the algorithms are developed and why they work.
 
 Along with new and updated examples, the Third Edition features:
+
 - A novel approach to Francis' QR algorithm that explains its properties without reference to the basic QR algorithm
 - Application of classical Gram-Schmidt with reorthogonalization
 - A revised approach to the derivation of the Golub-Reinsch SVD algorithm

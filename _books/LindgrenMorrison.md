@@ -4,7 +4,7 @@ title: Atomic Many-Body Theory
 author: I. Lindgren and J. Morrison
 cover: assets/img/book_covers/LindgrenMorrison.jpg
 isbn: 3642966160
-categories: [ many-body methods ]
+categories: [many-body methods]
 tags: advanced
 difficulty: advanced
 buy_link: https://www.amazon.com/Atomic-Many-Body-Springer-Chemical-Physics/dp/3642966160

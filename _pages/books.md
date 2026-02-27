@@ -21,4 +21,3 @@ collection: books
 ## Books and articles that I found useful or interesting
 
 ---
-

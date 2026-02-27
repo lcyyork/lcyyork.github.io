@@ -3,7 +3,7 @@ layout: book-review
 title: "The Configuration Interaction Method: Advances in Highly Correlated Approaches"
 author: C. David Sherrill and Henry F. Schaefer III
 cover: assets/img/book_covers/AdvQuantumChem_Sherrill1999.png
-categories: [ configuration interaction ]
+categories: [configuration interaction]
 tags: intermediate
 difficulty: intermediate
 buy_link: https://doi.org/10.1016/S0065-3276(08)60532-8

@@ -4,7 +4,7 @@ title: Modern Quantum Mechanics
 author: J. J. Sakurai and Jim Napolitano
 cover: assets/img/book_covers/Sakurai.jpg
 isbn: 1108473229
-categories: [ quantum mechanics ]
+categories: [quantum mechanics]
 tags: intermediate
 difficulty: intermediate
 buy_link: https://www.amazon.com/Modern-Quantum-Mechanics-J-Sakurai/dp/1108473229

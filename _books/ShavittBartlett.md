@@ -4,7 +4,7 @@ title: Many-Body Methods in Chemistry and Physics
 author: Isaiah Shavitt and Rodney J. Bartlett
 cover: assets/img/book_covers/ShavittBartlett.jpg
 isbn: 052181832X
-categories: [ quantum chemistry, many-body methods, coupled-cluster theory ]
+categories: [quantum chemistry, many-body methods, coupled-cluster theory]
 tags: advanced
 difficulty: advanced
 buy_link: https://www.amazon.com/Many-Body-Methods-Chemistry-Physics-Coupled-Cluster/dp/052181832X

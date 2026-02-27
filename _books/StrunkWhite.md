@@ -4,7 +4,7 @@ title: The Elements of Style
 author: William Strunk Jr. and E. B. White
 cover: assets/img/book_covers/StrunkWhite.jpg
 isbn: 9780205309023
-categories: [ scientific writing ]
+categories: [scientific writing]
 tags: introductory
 difficulty: introductory
 buy_link: https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X

@@ -5,8 +5,8 @@ author: Attila Szabo and Neil S. Ostlund
 cover: assets/img/book_covers/SzaboOstlund.jpg
 #olid: OL43499941M # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: 0486691861 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories: [ quantum chemistry ]
-tags: [ introductory ]
+categories: [quantum chemistry]
+tags: [introductory]
 buy_link: https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861
 #date: 2021-11-11
 #started: 2011-06-01

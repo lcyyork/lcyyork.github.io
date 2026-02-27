@@ -6,12 +6,11 @@ layout: page
 {% if page.collection and page.collection.size > 0 %}
   {% assign collection = site[page.collection] %}
   {% if collection and collection.size > 0 %}
-
     {%- comment -%}
-    Step 1: Collect all categories from all books
+      Step 1: Collect all categories from all books
     {%- endcomment -%}
 
-    {% assign all_categories = "" | split: "" %}
+    {% assign all_categories = '' | split: '' %}
 
     {% for item in collection %}
       {% if item.categories %}
@@ -24,60 +23,59 @@ layout: page
     {% assign unique_categories = all_categories | uniq | sort %}
 
     {%- comment -%}
-    Step 2: Loop over each category
+      Step 2: Loop over each category
     {%- endcomment -%}
 
     {% for cat in unique_categories %}
       <h3>{{ cat }}</h3>
       <ul>
+        {%- comment -%}
+          Step 3: Select books containing this category
+        {%- endcomment -%}
 
-      {%- comment -%}
-      Step 3: Select books containing this category
-      {%- endcomment -%}
+        {% assign books_in_cat = collection | where_exp: 'item', 'item.categories contains cat' | sort: 'released' %}
 
-      {% assign books_in_cat = collection
-        | where_exp: "item", "item.categories contains cat"
-        | sort: "released" %}
-
-      {% for item in books_in_cat %}
-
-        <figure class="cover">
-          <a class="cover-link" href="{{ item.url | relative_url }}">
-
-            {% if item.cover %}
-              <img alt="{{ item.title }} cover"
-                   src="{{ item.cover | prepend: page.covers | relative_url }}"
-                   style="height:200px">
-            {% elsif item.olid %}
-              <img alt="{{ item.title }} cover"
-                   src="https://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false"
-                   style="height:200px">
-            {% elsif item.isbn %}
-              <img alt="{{ item.title }} cover"
-                   src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false"
-                   style="height:200px">
-            {% endif %}
-
-            {% if item.status %}
-              {% assign statuses = 'abandoned,finished,interested,paused,queued,reading,reread' | split: ',' %}
-              {% assign status = item.status | downcase | strip %}
-              {% if statuses contains status %}
-                <figcaption class="{{ status | downcase }}">{{ status | upcase }}</figcaption>
-              {% else %}
-                <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
+        {% for item in books_in_cat %}
+          <figure class="cover">
+            <a class="cover-link" href="{{ item.url | relative_url }}">
+              {% if item.cover %}
+                <img
+                  alt="{{ item.title }} cover"
+                  src="{{ item.cover | prepend: page.covers | relative_url }}"
+                  style="height:200px"
+                >
+              {% elsif item.olid %}
+                <img
+                  alt="{{ item.title }} cover"
+                  src="https://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false"
+                  style="height:200px"
+                >
+              {% elsif item.isbn %}
+                <img
+                  alt="{{ item.title }} cover"
+                  src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false"
+                  style="height:200px"
+                >
               {% endif %}
-            {% endif %}
 
-            {% if item.difficulty %}
-              <figcaption class="{{ item.difficulty | downcase }}">
-                {{ item.difficulty | upcase }}
-              </figcaption>
-            {% endif %}
+              {% if item.status %}
+                {% assign statuses = 'abandoned,finished,interested,paused,queued,reading,reread' | split: ',' %}
+                {% assign status = item.status | downcase | strip %}
+                {% if statuses contains status %}
+                  <figcaption class="{{ status | downcase }}">{{ status | upcase }}</figcaption>
+                {% else %}
+                  <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
+                {% endif %}
+              {% endif %}
 
-          </a>
-        </figure>
-
-      {% endfor %}
+              {% if item.difficulty %}
+                <figcaption class="{{ item.difficulty | downcase }}">
+                  {{ item.difficulty | upcase }}
+                </figcaption>
+              {% endif %}
+            </a>
+          </figure>
+        {% endfor %}
       </ul>
     {% endfor %}
   {% endif %}

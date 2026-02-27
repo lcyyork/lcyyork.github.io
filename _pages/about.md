@@ -39,6 +39,7 @@ In 2021, I joined the College of Chemistry at Beijing Normal University as an as
 -->
 
 ## Openings
+
 We are continuously seeking talented postdoctoral researchers and highly motivated graduate or undergraduate students with a strong interest in theoretical and computational chemistry to join our group.
 Our research focuses on the development, implementation, and application of advanced electronic structure methods, with an emphasis on methodological innovation and high-performance scientific computing.
 

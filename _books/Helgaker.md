@@ -4,8 +4,8 @@ title: Molecular Electronic-Structure Theory
 author: Trygve Helgaker, Poul Jørgensen, and Jeppe Olsen
 cover: assets/img/book_covers/Helgaker.jpg
 isbn: 9781118531471 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories: [ quantum chemistry ]
-tags: [ advanced ]
+categories: [quantum chemistry]
+tags: [advanced]
 buy_link: https://www.amazon.com/Molecular-Electronic-Structure-Theory-Trygve-Helgaker/dp/1118531477
 #date: 2021-11-11
 #started: 2011-06-01
@@ -22,6 +22,7 @@ Recent developments of computational methods have enabled previously intractable
 
 This is the first comprehensive, up-to-date and technical work to cover all the important aspects of modern molecular electronic-structure theory.
 Topics covered in the book include:
+
 - Second quantization with spin adaptation
 - Gaussian basis sets and molecular-integral evaluation
 - Hartree-Fock theory
@@ -39,4 +40,3 @@ Problems and exercises are provided at the end of each chapter, complete with hi
 
 This book is a must for researchers in the field of quantum chemistry as well as for nonspecialists who wish to acquire a thorough understanding of ab initio molecular electronic-structure theory and its applications to problems in chemistry and physics.
 It is also highly recommended for the teaching of graduates and advanced undergraduates.
-

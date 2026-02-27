@@ -4,7 +4,7 @@ title: Group Theory and Chemistry
 author: David M. Bishop
 cover: assets/img/book_covers/Bishop.jpg
 isbn: 0486673553
-categories: [ group theory ]
+categories: [group theory]
 tags: introductory
 difficulty: introductory
 buy_link: https://www.amazon.com/Group-Theory-Chemistry-Dover-Books/dp/0486673553
