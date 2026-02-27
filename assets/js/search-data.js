@@ -233,6 +233,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Watkins/";
+            },},{id: "gallery-2025-06",
+          title: '2025-06',
+          description: "farewell xiaoxue and shuxian",
+          section: "Gallery",handler: () => {
+              window.location.href = "/gallery/2025-06-graduation/";
+            },},{id: "gallery-2026-02",
+          title: '2026-02',
+          description: "universal studios beijing",
+          section: "Gallery",handler: () => {
+              window.location.href = "/gallery/2026-02-universal/";
             },},{id: "news-york-presented-applications-of-dsrg-to-exchange-couplings-at-the-physical-chemistry-seminar-of-westlake-university-many-thanks-to-professor-bing-gu-for-the-kind-invitation-sparkles",
           title: 'York presented applications of DSRG to exchange couplings at the Physical Chemistry Seminar...',
           description: "",
