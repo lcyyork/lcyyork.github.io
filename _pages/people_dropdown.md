@@ -8,6 +8,9 @@ children:
   - title: members
     permalink: /people/
   - title: divider
+  - title: alumni
+    permalink: /alumni/
+  - title: divider
   - title: gallery
-    permalink: /people/
+    permalink: /gallery/
 ---
