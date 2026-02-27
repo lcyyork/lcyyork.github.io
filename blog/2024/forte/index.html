@@ -1,0 +1,149 @@
+<!DOCTYPE html> <html> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> installing Psi4 and Forte | The <strong>Li</strong> Group </title> <meta name="author" content="Chenyang Li"> <meta name="description" content="a step-by-step guide to installing Psi4 and Forte"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/avatar.png?v=ed4677bca54186573f43365efaf05f15"> <link rel="stylesheet" href="/assets/css/main.css?v=d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://lcyyork.github.io/blog/2024/forte/"> <script src="/assets/js/theme.js?v=5fea5159b787642c1bbc1f334d60f883"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> <script src="/assets/js/distillpub/template.v2.js"></script> <script src="/assets/js/distillpub/transforms.v2.js"></script> </head> <body> <d-front-matter> <script async type="text/json">
+      {
+            "title": "installing Psi4 and Forte",
+            "description": "a step-by-step guide to installing Psi4 and Forte",
+            "published": "September 29, 2024",
+            "authors": [
+              
+            ],
+            "katex": {
+              "delimiters": [
+                {
+                  "left": "$",
+                  "right": "$",
+                  "display": false
+                },
+                {
+                  "left": "$$",
+                  "right": "$$",
+                  "display": true
+                }
+              ]
+            }
+          }
+    </script> </d-front-matter> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> The <strong>Li</strong> Group </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">research </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">people </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/people/">members</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/people/">gallery</a> </div> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">resources </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/blog/">blog</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/books/">bookshelf</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="post distill"> <d-title> <h1>installing Psi4 and Forte</h1> <p>a step-by-step guide to installing Psi4 and Forte</p> </d-title> <d-article> <d-contents> <nav class="l-text figcaption"> <h3>Contents</h3> <ul id="toc" class="section-nav"> <li class="toc-entry toc-h2"> <a href="#1-update-ubuntu-packages">1. Update Ubuntu Packages</a> <ul> <li class="toc-entry toc-h3"><a href="#11-launch-wsl">1.1 Launch WSL</a></li> <li class="toc-entry toc-h3"><a href="#12-change-ubuntu-mirror-optional">1.2 Change Ubuntu Mirror (Optional)</a></li> <li class="toc-entry toc-h3"><a href="#13-update-packages">1.3 Update Packages</a></li> </ul> </li> <li class="toc-entry toc-h2"><a href="#2-install-cuda-toolkit-optional">2. Install CUDA Toolkit (Optional)</a></li> <li class="toc-entry toc-h2"><a href="#3-install-intel-oneapi-optional">3. Install Intel oneAPI (Optional)</a></li> <li class="toc-entry toc-h2"> <a href="#4-configure-python-environment">4. Configure Python Environment</a> <ul> <li class="toc-entry toc-h3"><a href="#41-install-miniconda">4.1 Install Miniconda</a></li> <li class="toc-entry toc-h3"><a href="#42-add-conda-forge-channel">4.2 Add conda-forge Channel</a></li> <li class="toc-entry toc-h3"><a href="#43-create-forteyml">4.3 Create forte.yml</a></li> </ul> </li> <li class="toc-entry toc-h2"><a href="#5-install-forte-non-developer">5. Install Forte (Non-developer)</a></li> <li class="toc-entry toc-h2"><a href="#6-install-ambit-developer">6. Install Ambit (Developer)</a></li> <li class="toc-entry toc-h2"><a href="#7-install-block2-preview-optional-for-dmrg">7. Install block2-preview (Optional for DMRG)</a></li> <li class="toc-entry toc-h2"><a href="#8-install-psi4-from-source-developer">8. Install Psi4 from Source (Developer)</a></li> <li class="toc-entry toc-h2"> <a href="#9-install-forte-developer">9. Install Forte (Developer)</a> <ul> <li class="toc-entry toc-h3"><a href="#91-clone">9.1 Clone:</a></li> <li class="toc-entry toc-h3"><a href="#92-compile">9.2 Compile</a></li> <li class="toc-entry toc-h3"><a href="#93-test">9.3 Test</a></li> </ul> </li> </ul> </nav> </d-contents> <p>This tutorial provides a step-by-step guide for installing the quantum chemistry packages <strong>Psi4</strong> and <strong>Forte</strong> in Windows 11 WSL2.</p> <ul> <li>Psi4: https://github.com/psi4/psi4</li> <li>Forte: https://github.com/evangelistalab/forte</li> </ul> <p>This guide heavily references from <a href="https://github.com/evangelistalab/forte/issues/277" target="_blank" rel="external nofollow noopener">Francesco’s psi4/ambit/forte setup (Mac BigSur 11.6.1, Dec. 2021)</a></p> <h2 id="1-update-ubuntu-packages">1. Update Ubuntu Packages</h2> <h3 id="11-launch-wsl">1.1 Launch WSL</h3> <p>In Windows PowerShell or CMD:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl
+</code></pre></div></div> <p>Enter root mode:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-i</span>
+</code></pre></div></div> <h3 id="12-change-ubuntu-mirror-optional">1.2 Change Ubuntu Mirror (Optional)</h3> <p>If network access is slow, consider switching to a faster mirror.</p> <p>Backup:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp /etc/apt/sources.list /etc/apt/sources.list.backup
+</code></pre></div></div> <p>Replace the content of <code class="language-plaintext highlighter-rouge">/etc/apt/sources.list</code> with a mirror matching your Ubuntu version.</p> <aside> For example, <a href="https://mirrors.tuna.tsinghua.edu.cn" target="_blank" rel="external nofollow noopener">Tsinghua Open Source Mirror</a> </aside> <h3 id="13-update-packages">1.3 Update Packages</h3> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+apt upgrade
+apt autoremove
+</code></pre></div></div> <p>Install development tools:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install </span>build-essential gfortran
+</code></pre></div></div> <p>Install spf13-vim (optional):</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://j.mp/spf13-vim3 <span class="nt">-L</span> <span class="o">&gt;</span> spf13-vim.sh <span class="o">&amp;&amp;</span> sh spf13-vim.sh
+</code></pre></div></div> <h2 id="2-install-cuda-toolkit-optional">2. Install CUDA Toolkit (Optional)</h2> <p>Requires NVIDIA driver installed in Windows.</p> <p>Follow instructions from NVIDIA website.<d-footnote>https://developer.nvidia.com/cuda-downloads</d-footnote></p> <p>Example (WSL-Ubuntu, deb network):</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> cuda-keyring_1.1-1_all.deb
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nt">-y</span> <span class="nb">install </span>cuda-toolkit-12-6
+</code></pre></div></div> <p>Verify installation:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvidia-smi
+</code></pre></div></div> <h2 id="3-install-intel-oneapi-optional">3. Install Intel oneAPI (Optional)</h2> <p>Install Intel Base Toolkit and HPC Toolkit via APT:<d-footnote>https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html</d-footnote></p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> gpg-agent wget
+wget <span class="nt">-O-</span> https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg –dearmor | <span class="nb">sudo tee</span> /usr/share/keyrings/oneapi-archive-keyring.gpg <span class="o">&gt;</span> /dev/null
+<span class="nb">echo</span> “deb <span class="o">[</span>signed-by<span class="o">=</span>/usr/share/keyrings/oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main” | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/oneAPI.list
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>intel-basekit
+<span class="nb">sudo </span>apt <span class="nb">install </span>intel-hpckit
+</code></pre></div></div> <aside> A sucessful installation should generate the `/opt/intel/oneapi` folder. </aside> <p>Set up the environment:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> /opt/intel/oneapi/setvars.sh
+</code></pre></div></div> <p>Optionally, add the following to <code class="language-plaintext highlighter-rouge">~/.bashrc</code> so that the variables are automatically loaded every time starting WSL:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span> /opt/intel/oneapi/setvars.sh
+</code></pre></div></div> <h2 id="4-configure-python-environment">4. Configure Python Environment</h2> <h3 id="41-install-miniconda">4.1 Install Miniconda</h3> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+</code></pre></div></div> <h3 id="42-add-conda-forge-channel">4.2 Add conda-forge Channel</h3> <p>Edit <code class="language-plaintext highlighter-rouge">~/.condarc</code>:</p> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">channels</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">conda-forge</span>
+  <span class="pi">-</span> <span class="s">defaults</span>
+</code></pre></div></div> <aside> It is also possible to specify channel mirrors, e.g., <a href="https://mirror.tuna.tsinghua.edu.cn/help/anaconda" target="_blank" rel="external nofollow noopener">Anaconda 软件仓库</a> </aside> <h3 id="43-create-forteyml">4.3 Create forte.yml</h3> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">forte</span>
+<span class="na">dependencies</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">python=3.12</span>
+  <span class="pi">-</span> <span class="s">pip</span>
+  <span class="pi">-</span> <span class="s">cmake</span>
+  <span class="pi">-</span> <span class="s">clang-format</span>
+  <span class="pi">-</span> <span class="s">numpy</span>
+  <span class="pi">-</span> <span class="s">scipy</span>
+  <span class="pi">-</span> <span class="s">boost</span>
+  <span class="pi">-</span> <span class="s">hdf5</span>
+  <span class="pi">-</span> <span class="s">yaml</span>
+  <span class="pi">-</span> <span class="s">jupyter</span>
+  <span class="pi">-</span> <span class="s">eigen</span>
+  <span class="pi">-</span> <span class="s">pytest</span>
+  <span class="pi">-</span> <span class="s">pydantic</span>
+  <span class="pi">-</span> <span class="s">pint</span>
+  <span class="pi">-</span> <span class="s">pybind11</span>
+  <span class="pi">-</span> <span class="s">pyyaml</span>
+  <span class="pi">-</span> <span class="s">pythreejs</span>
+  <span class="pi">-</span> <span class="s">libint</span>
+</code></pre></div></div> <p>Create environment:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">env </span>create <span class="nt">-f</span> forte.yml
+conda activate forte
+</code></pre></div></div> <p>Add activation command <code class="language-plaintext highlighter-rouge">conda activate forte</code> to <code class="language-plaintext highlighter-rouge">~/.bashrc</code> if desired.</p> <h2 id="5-install-forte-non-developer">5. Install Forte (Non-developer)</h2> <p>The easiest way to install forte is from <code class="language-plaintext highlighter-rouge">conda</code>:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>conda-forge::forte
+</code></pre></div></div> <p>Developers may need to compile Forte manually (see below).</p> <h2 id="6-install-ambit-developer">6. Install Ambit (Developer)</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/jturney/ambit.git
+<span class="nb">cd </span>ambit
+<span class="nb">mkdir </span>build <span class="o">&amp;&amp;</span> <span class="nb">cd </span>build
+cmake .. <span class="nt">-DCMAKE_INSTALL_PREFIX</span><span class="o">=</span><span class="nv">$HOME</span>/src/ambit-install <span class="se">\</span>
+         <span class="nt">-DCMAKE_C_COMPILER</span><span class="o">=</span>icx <span class="se">\</span>
+         <span class="nt">-DCMAKE_CXX_COMPILER</span><span class="o">=</span>icpx
+make <span class="nt">-j20</span>
+make <span class="nb">install</span>
+</code></pre></div></div> <aside> Please search for 'ghproxy' on the internet if you encounter internet issue when cloning the repository. </aside> <p>Add to <code class="language-plaintext highlighter-rouge">~/.bashrc</code>:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$HOME</span>/src/ambit-install/lib:<span class="nv">$PYTHONPATH</span>
+<span class="nb">export </span><span class="nv">AMBITPATH</span><span class="o">=</span><span class="nv">$HOME</span>/src/ambit-install
+</code></pre></div></div> <h2 id="7-install-block2-preview-optional-for-dmrg">7. Install block2-preview (Optional for DMRG)</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/block-hczhai/block2-preview.git
+<span class="nb">cd </span>block2-preview
+<span class="nb">mkdir </span>build <span class="o">&amp;&amp;</span> <span class="nb">cd </span>build
+cmake .. <span class="nt">-DCMAKE_INSTALL_PREFIX</span><span class="o">=</span><span class="nv">$HOME</span>/src/block2-install <span class="se">\</span>
+         <span class="nt">-DUSE_MKL</span><span class="o">=</span>ON <span class="se">\</span>
+         <span class="nt">-DBUILD_CLIB</span><span class="o">=</span>ON <span class="se">\</span>
+         <span class="nt">-DLARGE_BOND</span><span class="o">=</span>ON <span class="se">\</span>
+         <span class="nt">-DMPI</span><span class="o">=</span>OFF <span class="se">\</span>
+         <span class="nt">-DCMAKE_C_COMPILER</span><span class="o">=</span>icx <span class="se">\</span>
+         <span class="nt">-DCMAKE_CXX_COMPILER</span><span class="o">=</span>icpx
+make <span class="nt">-j20</span>
+make <span class="nb">install</span>
+</code></pre></div></div> <aside> If you see the error message `icpx: error: Use of ‘-qopenmp’ recommended over ‘-fopenmp’ [-Werror,-Wrecommended-option]`, you may replace `–fopenmp` to `-qopenmp` in `CMakeLists.txt`. </aside> <h2 id="8-install-psi4-from-source-developer">8. Install Psi4 from Source (Developer)</h2> <p>Install dependencies:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>libxc libecpint dkh gau2grid qcelemental qcengine optking
+</code></pre></div></div> <p>Clone source:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/psi4/psi4.git
+<span class="nb">cd </span>psi4
+<span class="nb">mkdir </span>build
+<span class="nb">cd </span>build
+</code></pre></div></div> <p>Configure:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake .. <span class="nt">-DCMAKE_INSTALL_PREFIX</span><span class="o">=</span><span class="nv">$HOME</span>/src/psi4-install <span class="se">\</span>
+         <span class="nt">-DENABLE_dkh</span><span class="o">=</span>ON <span class="se">\</span>
+         <span class="nt">-DENABLE_ambit</span><span class="o">=</span>ON <span class="se">\</span>
+         <span class="nt">-DENABLE_ecpint</span><span class="o">=</span>ON <span class="se">\</span>
+         <span class="nt">-DMAX_AM_ERI</span><span class="o">=</span>8 <span class="se">\</span>
+         <span class="nt">-Dpsi4_CXX_STANDARD</span><span class="o">=</span>20 <span class="se">\</span>
+         <span class="nt">-DCMAKE_CXX_STANDARD</span><span class="o">=</span>20 <span class="se">\</span>
+         <span class="nt">-Dambit_DIR</span><span class="o">=</span><span class="nv">$HOME</span>/src/ambit-install/share/cmake/ambit <span class="se">\</span>
+         <span class="nt">-DCMAKE_C_COMPILER</span><span class="o">=</span>icx <span class="se">\</span>
+         <span class="nt">-DCMAKE_CXX_COMPILER</span><span class="o">=</span>icpx <span class="se">\</span>
+         <span class="nt">-DCMAKE_Fortran_COMPILER</span><span class="o">=</span>gfortran
+</code></pre></div></div> <p>Compile:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make <span class="nt">-j20</span>
+make <span class="nb">install</span>
+</code></pre></div></div> <p>If Eigen error <code class="language-plaintext highlighter-rouge">fatal error: ‘eigen3/Eigen/Core’ file not found</code> occurs, you may install a new eigen via <code class="language-plaintext highlighter-rouge">sudo apt install libeigen3-dev</code>. Then, remove <code class="language-plaintext highlighter-rouge">CMakeCache.txt</code> and <code class="language-plaintext highlighter-rouge">CMakeFiles</code> and reconfigure with <code class="language-plaintext highlighter-rouge">-DEigen3_DIR=/usr/share/eigen3/cmake</code>.</p> <p>Add environment variables to <code class="language-plaintext highlighter-rouge">~/.bashrc</code>:<d-footnote>Please check https://psicode.org/psi4manual/1.1.0/build_planning</d-footnote></p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PSI4OBJ</span><span class="o">=</span><span class="nv">$HOME</span>/src/psi4/build
+<span class="nb">export </span><span class="nv">PSI4INS</span><span class="o">=</span><span class="nv">$HOME</span>/src/psi4-install
+<span class="nb">export </span><span class="nv">PSIDATADIR</span><span class="o">=</span><span class="nv">$PSI4INS</span>/share/psi4
+<span class="nb">export </span><span class="nv">PSI_SCRATCH</span><span class="o">=</span>/tmp/scratch/psi4
+<span class="nb">export </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$PSI4OBJ</span>/stage/lib:<span class="nv">$PYTHONPATH</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PSI4OBJ</span>/stage/bin:<span class="nv">$PATH</span>
+</code></pre></div></div> <p>Test:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> <span class="nv">$HOME</span>/src/psi4/tests/scf1
+psi4
+</code></pre></div></div> <h2 id="9-install-forte-developer">9. Install Forte (Developer)</h2> <h3 id="91-clone">9.1 Clone:</h3> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/evangelistalab/forte.git
+<span class="nb">cd </span>forte
+</code></pre></div></div> <h3 id="92-compile">9.2 Compile</h3> <p><strong>9.2.1 Compile via <code class="language-plaintext highlighter-rouge">setup.py</code> (Recommended)</strong></p> <p>Create <code class="language-plaintext highlighter-rouge">setup.cfg</code>:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[CMakeBuild]
+ambitpath=$HOME/src/ambit-install
+cmake_config_options=-DCMAKE_BUILD_TYPE=Debug -DENABLE_block2=ON -DCMAKE_PREFIX_PATH=$HOME/src/block2-install/share/cmake/block2
+</code></pre></div></div> <p>You need to replace <code class="language-plaintext highlighter-rouge">$HOME</code> to full path in the above lines.</p> <p>Then execute:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python setup.py develop
+</code></pre></div></div> <p><strong>9.2.2 Manual CMake build using <code class="language-plaintext highlighter-rouge">psi4 --plugin-compile</code></strong></p> <p>Create <code class="language-plaintext highlighter-rouge">compile-forte.sh</code>:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#! /bin/bash
+# Modify the following parameters
+ambit_dir=$HOME/src/ambit-install/share/cmake/ambit
+block2_dir=$HOME/src/block2-install/share/cmake/block2
+srcdir=$HOME/src/forte
+build_type=Debug
+# Run cmake
+cd $srcdir
+rm -rf CMakeFiles CMakeCache.txt cmake_install.cmake
+cmake_psi4=`psi4 –plugin-compile`
+$cmake_psi4 -Dambit_DIR=$ambit_dir -DCMAKE_BUILD_TYPE=$build_type -DMAX_DET_ORB=128 -DENABLE_block2=ON -Dblock2_DIR=$block2_dir
+# Compile
+make -j20
+</code></pre></div></div> <aside> <p>Please replace relevant paths.</p> </aside> <p>Execute:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash compile-forte.sh
+</code></pre></div></div> <p>Set environment variables in <code class="language-plaintext highlighter-rouge">~/.bashrc</code>:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PYTHONPATH=$HOME/src/forte:$PYTHONPATH
+</code></pre></div></div> <h3 id="93-test">9.3 Test</h3> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> <span class="nv">$HOME</span>/src/forte/tests/method
+python run_forte_tests.py <span class="nt">--type</span> short
+</code></pre></div></div> <p>🎉 Hooray! You compiled Forte successfully!</p> </d-article> <d-appendix> <d-footnote-list></d-footnote-list> <d-citation-list></d-citation-list> </d-appendix> <d-bibliography src="/assets/bibliography/"></d-bibliography> <d-article> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/wsl2/">setting up WSL2</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/ssh-tunnel/">cluster witout internet connection</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/centos6/">installing CentOS 6 on a cluster node</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2021/writing-papers/">writing scientific papers</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2021/basic-qc/">tutorials for quantum chemistry</a> </li> <br> <br> </d-article> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Chenyang Li. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script src="/assets/js/distillpub/overrides.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?v=a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?v=6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?v=ccc841c459bfc0e64c1c2b5acd10df02"></script> </body> </html>
