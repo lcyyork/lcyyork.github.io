@@ -38,10 +38,20 @@ During this period, we developed a series of multireference electronic structure
 In 2021, I joined the College of Chemistry at Beijing Normal University as an associate professor and was promoted to full professor in 2022.
 -->
 
+---
+
+## Welcome
+
+Welcome to the research group of **Chenyang Li** at Beijing Normal University!
+
+Our research focuses on the development, implementation, and application of advanced electronic structure methods, with an emphasis on methodological innovation.
+We are particularly interested in excited states, open-shell species, and transition-metal complexes, where conventional approaches often struggle.
+
+Through close integration of theory, algorithm development, and high-performance computing, we aim to push the boundaries of modern quantum chemistry and enable predictive simulations.
+
 ## Openings
 
 We are continuously seeking talented postdoctoral researchers and highly motivated graduate or undergraduate students with a strong interest in theoretical and computational chemistry to join our group.
-Our research focuses on the development, implementation, and application of advanced electronic structure methods, with an emphasis on methodological innovation and high-performance scientific computing.
 
 Prospective applicants who are enthusiastic about electronic structure theory, many-body methods, and computational chemistry are encouraged to contact me by email with a CV and a brief cover letter describing their research interests, relevant experience, and long-term goals.
 Postdoctoral applicants should also provide the contact information of two referees who can provide recommendation letters upon request.
