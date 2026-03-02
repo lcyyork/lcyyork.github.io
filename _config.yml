@@ -283,7 +283,7 @@ scholar:
   last_name: [Li]
   first_name: [Chenyang]
 
-  style: apa
+  style: ieee
   locale: en
 
   source: /_bibliography/
