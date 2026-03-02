@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "research",
-          description: "A growing collection of your cool projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -254,8 +254,8 @@ ninja.data = [{
             },},{id: "news-happy-chinese-new-year-may-the-year-of-the-horse-racehorse-bring-you-strength-energy-and-success-in-all-your-endeavors",
           title: 'Happy Chinese New Year! May the Year of the Horse :racehorse: bring you...',
           description: "",
-          section: "News",},{id: "news-congratulations-to-ziyu-on-her-paper-being-accepted-in-inorganic-chemistry-tada-tada-tada",
-          title: 'Congratulations to Ziyu on her paper being accepted in Inorganic Chemistry! :tada::tada::tada:',
+          section: "News",},{id: "news-congratulations-to-ziyu-on-her-paper-to-be-accepted-in-inorganic-chemistry-tada-tada-tada",
+          title: 'Congratulations to Ziyu on her paper to be accepted in Inorganic Chemistry! :tada::tada::tada:...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -302,6 +302,36 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-analytic-energy-derivatives",
+          title: 'analytic energy derivatives',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/analytic_derivatives/";
+            },},{id: "projects-driven-similarity-renormalization-group",
+          title: 'driven similarity renormalization group',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dsrg/";
+            },},{id: "projects-magnetism",
+          title: 'magnetism',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/magnetic/";
+            },},{id: "projects-reaction-mechanism",
+          title: 'reaction mechanism',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/organic/";
+            },},{id: "projects-reduced-scaling-methods",
+          title: 'reduced scaling methods',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/reduced_scaling/";
+            },},{id: "projects-relativistic-effect",
+          title: 'relativistic effect',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/relativistic/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
