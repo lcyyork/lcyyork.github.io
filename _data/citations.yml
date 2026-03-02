@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-24'
+  last_updated: '2026-03-02'
 papers:
   lHAtER0AAAAJ:-mN3Mh-tlDkC:
     citations: 17
@@ -70,7 +70,7 @@ papers:
     title: Diastereo- and Enantioselective Catalytic Kinetic Resolution of 2-Substituted 3-Nitro-2H-chromenes
     year: '2025'
   lHAtER0AAAAJ:L1USKYWJimsC:
-    citations: 30
+    citations: 31
     title: N-Heterocyclic carbene-catalyzed enantioselective synthesis of planar-chiral cyclophanes via dynamic kinetic resolution
     year: '2024'
   lHAtER0AAAAJ:LdasjJ6CEcoC:
@@ -86,7 +86,7 @@ papers:
     title: 'Connected three-body terms in single-reference unitary many-body theories: Iterative and perturbative approximations'
     year: '2020'
   lHAtER0AAAAJ:NyGDZy8z5eUC:
-    citations: 64
+    citations: 65
     title: 'Driven similarity renormalization group: Third-order multireference perturbation theory'
     year: '2017'
   lHAtER0AAAAJ:PVgj2kMGcgYC:
@@ -118,7 +118,7 @@ papers:
     title: "Improving the efficiency of the multireference driven similarity renormalization group theory via sequential transformation, density fitting, and non-interacting virtual \u2026"
     year: '2019'
   lHAtER0AAAAJ:d1gkVwhDpl0C:
-    citations: 119
+    citations: 120
     title: 'Multireference driven similarity renormalization group: A second-order perturbative analysis'
     year: '2015'
   lHAtER0AAAAJ:j7_hQOaDUrUC:
@@ -130,7 +130,7 @@ papers:
     title: "Erratum:\u201CTowards numerically robust multireference theories: The driven similarity renormalization group truncated to one-and two-body operators\u201D[J. Chem. Phys. 144, 164114 (2016)]"
     year: '2018'
   lHAtER0AAAAJ:jU7OWUQzBzMC:
-    citations: 30
+    citations: 31
     title: N-heterocyclic carbene-catalyzed highly enantioselective macrolactonization to access planar-chiral macrocycles
     year: '2024'
   lHAtER0AAAAJ:jgBuDB5drN8C:
@@ -170,7 +170,7 @@ papers:
     title: Analytic gradients for the single-reference driven similarity renormalization group second-order perturbation theory
     year: '2019'
   lHAtER0AAAAJ:wMgC3FpKEyYC:
-    citations: 52
+    citations: 53
     title: 'Driven similarity renormalization group for excited states: A state-averaged perturbation theory'
     year: '2018'
   lHAtER0AAAAJ:zCSUwVk65WsC:
