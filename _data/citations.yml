@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-05-27'
+  last_updated: '2026-06-03'
 papers:
   lHAtER0AAAAJ:-mN3Mh-tlDkC:
-    citations: 20
+    citations: 21
     title: 'Forte: A suite of advanced multireference quantum chemistry methods'
     year: '2024'
   lHAtER0AAAAJ:1lhNe0rCu4AC:
@@ -182,6 +182,6 @@ papers:
     title: 'Driven similarity renormalization group for excited states: A state-averaged perturbation theory'
     year: '2018'
   lHAtER0AAAAJ:zCSUwVk65WsC:
-    citations: 62
+    citations: 63
     title: Multireference theories of electron correlation based on the driven similarity renormalization group
     year: '2019'
