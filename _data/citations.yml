@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-15'
+  last_updated: '2026-07-27'
 papers:
   lHAtER0AAAAJ:-mN3Mh-tlDkC:
     citations: 21
@@ -88,7 +88,7 @@ papers:
   lHAtER0AAAAJ:MhiOAD_qIWkC:
     citations: 25
     title: Theoretical calculation of core-excited states along dissociative pathways beyond second-order perturbation theory
-    year: '2021'
+    year: '2022'
   lHAtER0AAAAJ:MpfHP-DdYjUC:
     citations: 15
     title: 'Connected three-body terms in single-reference unitary many-body theories: Iterative and perturbative approximations'
@@ -182,6 +182,6 @@ papers:
     title: 'Driven similarity renormalization group for excited states: A state-averaged perturbation theory'
     year: '2018'
   lHAtER0AAAAJ:zCSUwVk65WsC:
-    citations: 67
+    citations: 68
     title: Multireference theories of electron correlation based on the driven similarity renormalization group
     year: '2019'
