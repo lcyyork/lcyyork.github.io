@@ -243,6 +243,11 @@ ninja.data = [{
           description: "universal studios beijing",
           section: "Gallery",handler: () => {
               window.location.href = "/gallery/2026-02-universal/";
+            },},{id: "gallery-2026-06",
+          title: '2026-06',
+          description: "farewell ziyu",
+          section: "Gallery",handler: () => {
+              window.location.href = "/gallery/2026-06-graduation/";
             },},{id: "news-york-presented-applications-of-dsrg-to-exchange-couplings-at-the-physical-chemistry-seminar-of-westlake-university-many-thanks-to-professor-bing-gu-for-the-kind-invitation-sparkles",
           title: 'York presented applications of DSRG to exchange couplings at the Physical Chemistry Seminar...',
           description: "",
@@ -259,6 +264,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-congratulations-to-ziyu-on-successfully-defending-her-master-s-thesis-she-will-begin-a-new-chapter-in-public-service-we-wish-her-all-the-best-tada-tada-tada",
           title: 'Congratulations to Ziyu on successfully defending her master’s thesis! She will begin a...',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-meng-on-her-paper-to-be-accepted-in-journal-of-chemical-theory-and-computation",
+          title: 'Congratulations to Meng on her paper to be accepted in Journal of Chemical...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
