@@ -15,4 +15,8 @@ profiles:
     image: shuxian_mao.jpg
     content: shuxian_mao.md
     image_circular: false
+  - align: left
+    image: ziyu_hu.jpg
+    content: ziyu_hu.md
+    image_circular: false
 ---

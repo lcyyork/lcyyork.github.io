@@ -30,8 +30,8 @@ profiles:
     content: pei_liu.md
     image_circular: false
   - align: left
-    image: ziyu_hu.jpg
-    content: ziyu_hu.md
+    image: ran_wang.jpg
+    content: ran_wang.md
     image_circular: false
   - align: left
     image: yaqi_yao.jpg
