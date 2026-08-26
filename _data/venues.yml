@@ -18,7 +18,7 @@
   url: https://pubs.acs.org/journal/orlef7
   color: "#d61f31"
 
-"NCOMM":
+"NatCommun":
   url: https://www.nature.com/ncomms
   color: "#e63324"
 
@@ -40,6 +40,10 @@
 "JPCB":
   url: https://pubs.acs.org/journal/jpcbfk
   color: "#31aae1"
+
+"ChemSci":
+  url: https://pubs.rsc.org/sc
+  color: "#00497a"
 
 "AJP":
   url: https://aapt.scitation.org/journal/ajp

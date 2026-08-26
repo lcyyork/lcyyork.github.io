@@ -12,7 +12,7 @@ Relativistic effects become essential for molecules containing heavy elements, w
 These effects strongly influence electronic structure, spectroscopic properties, and chemical reactivity, particularly in transition-metal and lanthanide/actinide complexes.
 
 In our group, we are interested in developing robust and computationally affordable multireference methods for treating relativistic phenomena in complex molecular systems.
-We have recently developed an efficient treatment of SOC within the state-averaged driven similarity renormalization group second-order perturbation theory {% cite Wang2025a %}.
+We have recently developed an efficient treatment of SOC within the state-averaged driven similarity renormalization group second-order perturbation theory {% cite Wang2025a Wang2026 %}.
 This approach enables cost-effective and reliable SOC calculations for systems containing heavy elements.
 
 <br>
