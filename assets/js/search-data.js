@@ -259,14 +259,14 @@ ninja.data = [{
             },},{id: "news-happy-chinese-new-year-may-the-year-of-the-horse-racehorse-bring-you-strength-energy-and-success-in-all-your-endeavors",
           title: 'Happy Chinese New Year! May the Year of the Horse :racehorse: bring you...',
           description: "",
-          section: "News",},{id: "news-congratulations-to-ziyu-on-her-paper-to-be-accepted-in-inorganic-chemistry-tada-tada-tada",
-          title: 'Congratulations to Ziyu on her paper to be accepted in Inorganic Chemistry! :tada::tada::tada:...',
+          section: "News",},{id: "news-congratulations-to-ziyu-on-her-paper-accepted-for-publication-in-inorganic-chemistry-tada-tada-tada",
+          title: 'Congratulations to Ziyu on her paper accepted for publication in Inorganic Chemistry! :tada::tada::tada:...',
           description: "",
           section: "News",},{id: "news-congratulations-to-ziyu-on-successfully-defending-her-master-s-thesis-she-will-begin-a-new-chapter-in-public-service-we-wish-her-all-the-best-tada-tada-tada",
           title: 'Congratulations to Ziyu on successfully defending her master’s thesis! She will begin a...',
           description: "",
-          section: "News",},{id: "news-congratulations-to-meng-on-her-paper-to-be-accepted-in-journal-of-chemical-theory-and-computation",
-          title: 'Congratulations to Meng on her paper to be accepted in Journal of Chemical...',
+          section: "News",},{id: "news-congratulations-to-meng-on-the-acceptance-of-her-paper-in-journal-of-chemical-theory-and-computation",
+          title: 'Congratulations to Meng on the acceptance of her paper in Journal of Chemical...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -328,8 +328,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/magnetic/";
-            },},{id: "projects-reaction-mechanism",
-          title: 'reaction mechanism',
+            },},{id: "projects-physical-organics",
+          title: 'physical organics',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/organic/";
