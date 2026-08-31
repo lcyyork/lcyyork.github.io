@@ -268,7 +268,12 @@ ninja.data = [{
           section: "News",},{id: "news-congratulations-to-meng-on-the-acceptance-of-her-paper-in-journal-of-chemical-theory-and-computation",
           title: 'Congratulations to Meng on the acceptance of her paper in Journal of Chemical...',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-group-meeting-schedule-of-2026-2027-fall-semester",
+          title: 'Group Meeting Schedule of 2026-2027 Fall Semester',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-08-31/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
