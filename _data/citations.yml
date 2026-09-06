@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-23'
+  last_updated: '2026-09-04'
 papers:
   lHAtER0AAAAJ:-mN3Mh-tlDkC:
     citations: 21
@@ -18,7 +18,7 @@ papers:
     title: 'Towards numerically robust multireference theories: The driven similarity renormalization group truncated to one-and two-body operators'
     year: '2016'
   lHAtER0AAAAJ:3NQIlFlcGxIC:
-    citations: 7
+    citations: 8
     title: 'Driven similarity renormalization group with a large active space: Applications to oligoacenes, zeaxanthin, and chromium dimer'
     year: '2025'
   lHAtER0AAAAJ:48xauSegjOkC:
@@ -34,7 +34,7 @@ papers:
     title: Challenges and opportunities in electronic structure theory
     year: '2024'
   lHAtER0AAAAJ:6bLC7aUMtPcC:
-    citations: 2
+    citations: 3
     title: "A Cost-Effective Treatment of Spin\u2013Orbit Couplings in the State-Averaged Driven Similarity Renormalization Group Second-Order Perturbation Theory"
     year: '2025'
   lHAtER0AAAAJ:7H_MAutzIkAC:
@@ -46,7 +46,7 @@ papers:
     title: Recent developments in adaptive methods for strongly correlated electrons
     year: '2019'
   lHAtER0AAAAJ:9yKSN-GCB0IC:
-    citations: 59
+    citations: 60
     title: An integral-factorized implementation of the driven similarity renormalization group second-order multireference perturbation theory
     year: '2016'
   lHAtER0AAAAJ:ALROH1vI_8AC:
@@ -62,7 +62,7 @@ papers:
     title: "Improving the efficiency of the multireference driven similarity renormalization group via sequential transformation, density fitting, and the noninteracting virtual orbital \u2026"
     year: '2019'
   lHAtER0AAAAJ:CB2v5VPnA5kC:
-    citations: 6
+    citations: 8
     title: Frozen natural orbitals for the State-Averaged driven similarity renormalization group
     year: '2024'
   lHAtER0AAAAJ:CaZNVDsoPx4C:
@@ -74,7 +74,7 @@ papers:
     title: Diastereo- and Enantioselective Catalytic Kinetic Resolution of 2-Substituted 3-Nitro-2H-chromenes
     year: '2025'
   lHAtER0AAAAJ:DBa1UEJaJKAC:
-    citations: 1
+    citations: 2
     title: Toward Quantitative Computations of Exchange Coupling Constants in Transition-Metal Complexes via Multireference Driven Similarity Renormalization Group
     year: '2026'
   lHAtER0AAAAJ:KaMxkj08jr0C:
@@ -106,7 +106,7 @@ papers:
     title: A low-cost approach to electronic excitation energies based on the driven similarity renormalization group
     year: '2017'
   lHAtER0AAAAJ:PYBJJbyH-FwC:
-    citations: 17
+    citations: 18
     title: 'Assessment of state-averaged driven similarity renormalization group on vertical excitation energies: optimal flow parameters and applications to nucleobases'
     year: '2023'
   lHAtER0AAAAJ:QD3KBmkZPeQC:
@@ -126,13 +126,17 @@ papers:
     title: "Improving the efficiency of the multireference driven similarity renormalization group theory via sequential transformation, density fitting, and non-interacting virtual \u2026"
     year: '2019'
   lHAtER0AAAAJ:d1gkVwhDpl0C:
-    citations: 124
+    citations: 125
     title: 'Multireference driven similarity renormalization group: A second-order perturbative analysis'
     year: '2015'
   lHAtER0AAAAJ:j7_hQOaDUrUC:
-    citations: 33
+    citations: 34
     title: 'Spin-free formulation of the multireference driven similarity renormalization group: A benchmark study of first-row diatomic molecules and spin-crossover energetics'
     year: '2021'
+  lHAtER0AAAAJ:jE2MZjpN3IcC:
+    citations: 0
+    title: "Simultaneous Treatment of Electron Correlation and Spin\u2013Orbit Coupling with State-Averaged Driven Similarity Renormalization Group Second-Order Perturbation Theory"
+    year: '2026'
   lHAtER0AAAAJ:jL-93Qbq4QoC:
     citations: 11
     title: "Erratum:\u201CTowards numerically robust multireference theories: The driven similarity renormalization group truncated to one-and two-body operators\u201D[J. Chem. Phys. 144, 164114 (2016)]"
@@ -163,7 +167,7 @@ papers:
     year: '2025'
   lHAtER0AAAAJ:u-x6o8ySG0sC:
     citations: 12
-    title: "Intricate Internal Rotation Surface and Fundamental Infrared Transitions of the n\u2011Propyl Radical"
+    title: Intricate Internal Rotation Surface and Fundamental Infrared Transitions of the n-Propyl Radical
     year: '2015'
   lHAtER0AAAAJ:u5HHmVD_uO8C:
     citations: 13
@@ -182,10 +186,10 @@ papers:
     title: Analytic gradients for the single-reference driven similarity renormalization group second-order perturbation theory
     year: '2019'
   lHAtER0AAAAJ:wMgC3FpKEyYC:
-    citations: 56
+    citations: 57
     title: 'Driven similarity renormalization group for excited states: A state-averaged perturbation theory'
     year: '2018'
   lHAtER0AAAAJ:zCSUwVk65WsC:
-    citations: 68
+    citations: 69
     title: Multireference theories of electron correlation based on the driven similarity renormalization group
     year: '2019'
